@@ -1,0 +1,13 @@
+export HADOOP_HOME=/home/student/hadoop
+
+export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export HDFS_NAMENODE_USER=student
+export HDFS_DATANODE_USER=student
+export HDFS_SECONDARYNAMENODE_USER=student
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+export HADOOP_MAPRED_HOME=$HADOOP_HOME
+export HADOOP_COMMON_HOME=$HADOOP_HOME
+export HADOOP_HDFS_HOME=$HADOOP_HOME
+export YARN_HOME=$HADOOP_HOME
